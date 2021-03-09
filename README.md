@@ -1,5 +1,4 @@
-pre-requisites - download code and do setup from https://github.com/BestBuy/api-playground
-
+pre-requisites - download code and do setup from https://github.com/Shubhangi-0131/PetclinicRestAssured
 Project has 2 sub-modules 
 
 1) api-common - common code that all ApiClient classes can inherit from
