@@ -1,0 +1,17 @@
+[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/services
+Body:
+{"name":"New Service"}
+HTTP/1.1 404 
+ç{"timestamp":"2021-03-08T11:01:36.747+0000","status":404,"error":"Not Found","message":"No message available","path":"/petclinic/services"}
+[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/services
+Body:			<none>
+HTTP/1.1 404 
+ç{"timestamp":"2021-03-08T11:01:38.367+0000","status":404,"error":"Not Found","message":"No message available","path":"/petclinic/services"}
+oRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/services?%24sort%5Bname%5D=1
+Body:			<none>
+HTTP/1.1 404 
+ç{"timestamp":"2021-03-08T11:01:39.213+0000","status":404,"error":"Not Found","message":"No message available","path":"/petclinic/services"}
+YRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/stores
+Body:			<none>
+HTTP/1.1 404 
+ã{"timestamp":"2021-03-08T11:01:39.668+0000","status":404,"error":"Not Found","message":"No message available","path":"/petclinic/stores"}

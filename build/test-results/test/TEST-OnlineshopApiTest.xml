@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OnlineshopApiTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-08T12:10:25" hostname="DESKTOP-HBSV667" time="83.944">
+  <properties/>
+  <testcase name="createProduct_checkId_ShouldReturnNewProduct()" classname="OnlineshopApiTest" time="76.63">
+    <system-out><![CDATA[17:40:48.707 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+amount : 100.00
+name : SHUBHANGI
+currency : INR
+id : 71
+17:40:49.510 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart/
+Body:
+{"name":"SHUBHANGI","currency":"INR","id":"71","amount":"100.00","quantity":0}
+17:41:20.339 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"id":71,"name":"SHUBHANGI","amount":100.00,"quantity":1,"currency":"INR"}
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <testcase name="getProduct_DefaultLimit_ShouldReturn10Results()" classname="OnlineshopApiTest" time="0.881">
+    <system-out><![CDATA[17:41:42.462 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:42.462 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			<none>
+17:41:43.259 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+The value at index 1Response{name='Kennel Kitchen', currency='$', id='1', quantity='0', amount='635.00'}
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <testcase name="getServices_StatusCode()" classname="OnlineshopApiTest" time="0.94">
+    <system-out><![CDATA[17:41:43.365 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:43.366 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			<none>
+17:41:43.800 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <testcase name="deleteNewOwners_throughID_ShouldDisplayDeletedId()" classname="OnlineshopApiTest" time="2.064">
+    <system-out><![CDATA[17:41:44.304 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:44.306 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart/
+Body:
+{"name":"Shubhangi","currency":"INR","id":"61","amount":"100.00","quantity":0}
+17:41:45.857 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"id":61,"name":"Shubhangi","amount":100.00,"quantity":1,"currency":"INR"}
+17:41:45.862 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:45.863 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart
+Body:			<none>
+17:41:46.362 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+Cart empty.
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <testcase name="getServices_Header()" classname="OnlineshopApiTest" time="1.148">
+    <system-out><![CDATA[17:41:46.377 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:46.377 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
+Body:			<none>
+17:41:46.799 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <testcase name="getOrdersSummary_fromCart()" classname="OnlineshopApiTest" time="2.254">
+    <system-out><![CDATA[17:41:47.538 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:47.538 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart
+Body:
+{"name":"TestOrderSummary","currency":"$","id":"4","amount":"500.00","quantity":0}
+17:41:47.984 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"id":4,"name":"TestOrderSummary","amount":500.00,"quantity":1,"currency":"$"}
+17:41:47.989 - [OnlineshopApiClient] INFO  : Initiated petclinic.api.onlineshop.OnlineshopApiClient instance
+17:41:48.012 - [ApiCaller] INFO  : Request:
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary
+Body:			<none>
+17:41:49.349 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"cart":[{"id":4,"name":"TestOrderSummary","amount":500.00,"quantity":1,"currency":"$"}],"totalAmount":500.00}
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
